@@ -13,7 +13,7 @@ int main()
 	int ce;																														//Coût pour l'essence.
 	int ckms;																													//Coût pour la distance parcourue.
 	int kmsp;																													//Nombres de kilomètres parcourus payants (qui ne faont pas parti des 250 gratuits par jours).
-	int ct;																														//Coût total.
+	float ct;																														//Coût total.
 
 	setlocale(LC_ALL, "");																										//Pour afficher les accents correctement dans la console.
 
@@ -50,3 +50,17 @@ int main()
 	}
 	return 0;
 }
+
+
+
+
+/*Plan de test
+jrs					kms							résultat
+1					1							45$
+-1					300							Vous n'avez pas entré un valeur valide.
+5					-1							Vous n'avez pas entré un valeur valide.
+6					1000						365$
+1					300							75$
+0					0							Vous n'avez pas entré un valeur valide.
+50					300000						45 125$
+*/
